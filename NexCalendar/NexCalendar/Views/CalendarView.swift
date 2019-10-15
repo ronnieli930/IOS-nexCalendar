@@ -24,34 +24,38 @@ struct CalendarView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                CalendarModePicker(displayMode: self.$displayMode)
-                if displayMode == 0 {
-                    //Gregorian Mode
-                    Spacer()
-                    GregorianView(displayYear: $gregYear, displayMonth: $gregMonth, offset: $gregOffset)
-                    Spacer()
-                    Spacer()
-                }else if displayMode == 1 {
-//                    // Nex Mode
-                    Spacer()
-                    NexView(displayYear: $nexYear, displayMonth: $nexMonth, offset: $nexOffset)
-                    Spacer()
-                    Spacer()
-                } else if displayMode == 2{
-                    ScrollView(.vertical, showsIndicators: true) {
+            ZStack {
+                Color.yellow.edgesIgnoringSafeArea(.all)
+                VStack(spacing: 20) {
+                    CalendarModePicker(displayMode: self.$displayMode)
+                        .padding(.horizontal)
+                    if displayMode == 0 {
+                        //Gregorian Mode
+                        Spacer()
                         GregorianView(displayYear: $gregYear, displayMonth: $gregMonth, offset: $gregOffset)
-                        Divider()
+                        Spacer()
+                        Spacer()
+                    }else if displayMode == 1 {
+                        //                    // Nex Mode
+                        Spacer()
                         NexView(displayYear: $nexYear, displayMonth: $nexMonth, offset: $nexOffset)
+                        Spacer()
+                        Spacer()
+                    } else if displayMode == 2{
+                        ScrollView(.vertical, showsIndicators: true) {
+                            GregorianView(displayYear: $gregYear, displayMonth: $gregMonth, offset: $gregOffset)
+                            Divider()
+                            NexView(displayYear: $nexYear, displayMonth: $nexMonth, offset: $nexOffset)
+                        }
+                        
                     }
-                    
                 }
+                .navigationBarTitle(Text("Calendar"), displayMode: .large)
+                .navigationBarItems(trailing: Button(action: {self.showDatePicker.toggle()}) {HStack {
+                    Image(systemName: "keyboard.chevron.compact.down")
+                    Text("Date")
+                    }})
             }
-            .navigationBarTitle(Text("Calendar"), displayMode: .large)
-            .navigationBarItems(trailing: Button(action: {self.showDatePicker.toggle()}) {HStack {
-                Image(systemName: "keyboard.chevron.compact.down")
-                Text("Date")
-                }})
         }.sheet(isPresented: $showDatePicker, content: {ModalDatePicker(showModal: self.$showDatePicker, gregYear: self.$gregYear, gregMonth: self.$gregMonth, nexYear: self.$nexYear, nexMonth: self.$nexMonth)})
     }
     

@@ -11,9 +11,6 @@ import SwiftUI
 struct AppView: View {
     @State private var selection = 1
     
-    init() {
-        UITabBar.appearance().backgroundColor = UIColor.black
-    }
     var body: some View {
         TabView (selection: $selection) {
             QuizView()
@@ -32,8 +29,7 @@ struct AppView: View {
                     Text("calendar")
             }.tag(2)
         }
-        .font(.headline)
-//        .edgesIgnoringSafeArea(.top)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 

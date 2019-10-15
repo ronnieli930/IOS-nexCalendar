@@ -72,6 +72,7 @@ struct GregorianView: View {
             .cornerRadius(20)
             .padding(.horizontal, 5)
             .clipped()
+            .shadow(radius: 15)
             .offset(x: self.offset.width)
             .gesture(DragGesture()
                 .onChanged { value in

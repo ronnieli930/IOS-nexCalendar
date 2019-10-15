@@ -19,6 +19,7 @@ struct CalendarModePicker: View {
                     .tag(index)
             }
         }.pickerStyle(SegmentedPickerStyle())
+        .shadow(radius: 5)
     }
 }
 
