@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "name": "Beginner",
+        "imageName": "beginner",
+        "description": "Finished full tutorial of NexCalendar"
+    },
+    {
+        "id": 1,
+        "name": "Skilled",
+        "imageName": "skilled",
+        "description": "Correctly answered more than 5 questions in quiz"
+    },
+    {
+        "id": 2,
+        "name": "Master",
+        "imageName": "master",
+        "description": "Correctly answered all questions for NexCalendar"
+    }
+]
