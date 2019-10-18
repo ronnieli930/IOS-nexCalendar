@@ -1,0 +1,277 @@
+[
+    {
+        "id": 1,
+        "title": "Which date of the following is \"The Leap Day\" in NexCalendar?",
+        "options": [
+            "Aug 30",
+            "Aug 31",
+            "Dec 30",
+            "Dec 31"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 2,
+        "title": "How many days are there in Feburary of NexCalendar?",
+        "options": [
+            "27",
+            "28",
+            "29",
+            "30"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 3,
+        "title": "The first day of each quarter is on _____ in NexCalendar.",
+        "options": [
+            "Monday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 4,
+        "title": "How many weeks are there in each quarter of NexCalendar?",
+        "options": [
+            "12",
+            "13",
+            "14",
+            "15"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 5,
+        "title": "When is the \"Long Saturday\" in NexCalendar?",
+        "options": [
+            "Aug 30 and Aug 31",
+            "Aug 31 and Sep 1",
+            "Dec 29 and Dec 30",
+            "Dec 30 and Dec 31"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 6,
+        "title": "When is the \"Long Sunday\" in NexCalendar?",
+        "options": [
+            "Aug 31 and Sep 1",
+            "Sep 1 and Sep 2",
+            "Dec 29 and Dec 30",
+            "Dec 30 and Dec 31"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 7,
+        "title": "The leap day is _______ in NexCalendar.",
+        "options": [
+            "at the beginning of the year",
+            "in the middle of the year",
+            "at the end of the year",
+            "none of the above"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 8,
+        "title": "The leap day is on _____ in NexCalendar.",
+        "options": [
+            "Monday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 9,
+        "title": "How many weeks are there per year in NexCalendar?",
+        "options": [
+            "50",
+            "51",
+            "52",
+            "53"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 10,
+        "title": "How many days are there in the first quarter of NexCalendar?",
+        "options": [
+            "90",
+            "91",
+            "92",
+            "93"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 11,
+        "title": " Why the leap day is on December 31?\n(i)The leap day in the middle of the year is troublesome\n(ii)The leap day should always be the last day of the year\n(iii)The leap day actually can be any day\nWhich of these are resonable?",
+        "options": [
+            "(i) only",
+            "(ii) only",
+            "(iii) only",
+            "(i) and (ii)only"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 12,
+        "title": "What are the differences between NexCalendar and the Gregorian calendar we are using today?",
+        "options": [
+            "NexCalendar has a \"Long Saturday\" every year and a \"Long Sunday\" in a leap year",
+            "Gregorian calendar has one calendar applicable to any year",
+            "NexCalendar has total 14 versions of Feburary",
+            "In the Gregorian calendar, the first day of each quarter are all on Monday"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 13,
+        "title": " ______ and ______ are the two extra days in NexCalendar.",
+        "options": [
+            "Aug 31 and Dec 30",
+            "Aug 31 and Dec 31",
+            "Sep 1 and Dec 30",
+            "Sep 1 and Dec 31"
+        ],
+        "answer": 1,
+    },
+    {
+        "id": 14,
+        "title": " Why August 31 is an extra Saturday?\n(i)August 31 is the last day of the Summer and Summer is astronomically longer than Winter\n(ii)It can maintain 5 rows of weeks per month for September\nWhich of these are resonable?",
+        "options": [
+            "(i) only",
+            "(ii) only",
+            "both (i) and (ii)",
+            "neither (i) nor (ii)"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 15,
+        "title": "How many days are there in the third quarter of NexCalendar?",
+        "options": [
+            "90",
+            "91",
+            "92",
+            "93"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 16,
+        "title": "How many days are there in the fourth quarter of a leap year in NexCalendar?",
+        "options": [
+            "90",
+            "91",
+            "92",
+            "93"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 17,
+        "title": " The ______ quarter and the ______ quarter both has an extra day in a leap year of NexCalendar.",
+        "options": [
+            "first and third",
+            "second and fourth",
+            "first and second",
+            "third and fourth"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 18,
+        "title": "How many days are there in the second quarter of NexCalendar?",
+        "options": [
+            "90",
+            "91",
+            "92",
+            "93"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 19,
+        "title": "The extra day in the third quarter is on _____ in NexCalendar.",
+        "options": [
+            "Monday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 20,
+        "title": "The leap day is in the _____ quarter of a leap year in NexCalendar.",
+        "options": [
+            "first",
+            "second",
+            "third",
+            "fourth"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 21,
+        "title": "The extra Saturday is in the _____ quarter of NexCalendar.",
+        "options": [
+            "first",
+            "second",
+            "third",
+            "fourth"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 22,
+        "title": "Which two months of a leap year have an extra day in NexCalendar?",
+        "options": [
+            "Feburary and August",
+            "August and November",
+            "November and December",
+            "August and December"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 23,
+        "title": "The extra Saturday is in _____ of NexCalendar.",
+        "options": [
+            "Feburary",
+            "August",
+            "September",
+            "December"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 24,
+        "title": "The leap day is in _____ of a leap year in NexCalendar.",
+        "options": [
+            "Feburary",
+            "August",
+            "September",
+            "December"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 25,
+        "title": "How many days are there per year in a leap year of NexCalendar?",
+        "options": [
+            "364",
+            "365",
+            "366",
+            "367"
+        ],
+        "answer": 2
+    }
+]

@@ -1,11 +1,3 @@
-//
-//  CalendarWeekdays.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/11/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct CalendarWeekdays: View {

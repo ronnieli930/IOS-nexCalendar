@@ -1,31 +1,21 @@
-//
-//  QuizView.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/10/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct QuizView: View {
+    @State var viewState = CGSize.zero
+    @State var showQuestion = false
+    
     var body: some View {
-        NavigationView {
-            Text("Quiz View")
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(Color.blue)
-                .navigationBarTitle("Quiz")
-                .navigationBarItems(trailing:
-                    HStack {
-                        Button("Settings") {
-                            print("Settings tapped!")
-                        }
-                        Image(systemName: "gear")
-                            .foregroundColor(Color.blue)
-                    }
-            )
+        ZStack {
+            Color.yellow.edgesIgnoringSafeArea(.all)
+            QuizCover(viewState: self.$viewState, showQuestion: self.$showQuestion)
+                .sheet(isPresented: $showQuestion, content: {QuestionView(questions: self.getQuestions())})
         }
+    }
+    
+    func getQuestions() -> [Question] {
+        var questions = questionsData
+        questions.shuffle()
+        return Array(questions.prefix(5))
     }
 }
 

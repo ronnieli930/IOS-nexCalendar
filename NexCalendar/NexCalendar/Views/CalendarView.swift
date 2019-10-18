@@ -1,14 +1,7 @@
-//
-//  CalendarView.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/10/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct CalendarView: View {
+    
     @State var displayMode: Int = 1
     @State var showDatePicker: Bool = false
     
@@ -25,7 +18,10 @@ struct CalendarView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.yellow.edgesIgnoringSafeArea(.all)
+//                Color.yellow.edgesIgnoringSafeArea(.all)
+                Image("background")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
                 VStack(spacing: 20) {
                     CalendarModePicker(displayMode: self.$displayMode)
                         .padding(.horizontal)

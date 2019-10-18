@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/10/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import UIKit
 import SwiftUI
 

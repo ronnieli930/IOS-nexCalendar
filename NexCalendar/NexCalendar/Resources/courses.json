@@ -1,0 +1,40 @@
+[
+    {
+        "id" : 1,
+        "title" : "What is NexCalendar",
+        "imageUrl" : "",
+        "content" : "NexCalendar is a simple and practical perennial solar calendar system. It is a natural extension of the Gregorian Calendar plus TWO new happy features. Nexcalendar can be applicable to any year with much more benefits. This simple and consistent calendar structure is excellent for al business and beneficial to all people."
+    },
+    
+    {
+        "id" : 2,
+        "title" : "NexCalendar v.s. Gregorian Calendar",
+        "imageUrl" : "",
+        "content" : "NexCalendar and Gregorian Calendar have several common features. For example, they both have 7 days a week from Monday to Sunday, four quarters in a year, 365 days in common year and 366 days in the leap year. However, NexCalendar has some special arrangements that makes the calendar yearly consistent:\n1. Every quarter of the year consistently starts on Monday and ends on Sunday and has exactly 13 weeks.\n2. August 31 (the extra Saturday) and September 1 are considered as one Long Saturday every year\n3. Dec 30 and Dec 31 (the leap day) are considered as one Long Sunday in the leap year."
+    },
+    
+    {
+        "id" : 3,
+        "title" : "Benefits of NexCalendar",
+        "imageUrl" : "",
+        "content" : "1. Memory friendly.\nThere are only one version of calendar every year. Activities can be planned early and do not need to check dates every time.\n2. Economy friendly.\nSince we do not need to update the calendar every year, more resources and energy can be saved."
+    },
+    {
+        "id" : 4,
+        "title" : "Why the first day of January is on Monday?",
+        "imageUrl" : "",
+        "content" : "• The current calendar was designed starting on Monday (Please check Jan 1 of year 1 and year 2001)\n• The ISO Week Standard specified the first day of the week is Monday\n• Our practice and concept actually consider Monday as the first day of the week\n• Of course, calendar months can show Sunday first in the week.\n• Friday 13 will never exist in NexCalendar"
+    },
+    {
+        "id" : 5,
+        "title" : "Why the leap day is on December 31?",
+        "imageUrl" : "",
+        "content" : "• The leap day should always be the last day of the year\n• The leap day in the middle of the year is nonsense and problematic\n• February was actually the last month of the year in history\n• February should have at least 29 days so that the first quarter can have 13 weeks\n• December 31 is the extra day in the forth quarter. Thus, it is best to be the leap day\n• Since both December 30 and December 31 are Sundays in the last week of the year, people born on December 31 will feel comfort and equivalent to celebrate their birthdays on Dec 30 in common years"
+    },
+    {
+        "id" : 6,
+        "title" : "Why August 31 is an extra Saturday?",
+        "imageUrl" : "",
+        "content" : "• There are 92 days in the third quarter. i.e. there is one Extra day.\n • August 31 is the last day of the Summer\n• Summer is astronomically longer than Winter\n• It gives a good reason why August is a long month\n• It can maintain 5 rows of weeks per month for September"
+    },
+]

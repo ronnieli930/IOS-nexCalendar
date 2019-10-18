@@ -1,11 +1,3 @@
-//
-//  CalendarModePicker.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/16/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct CalendarModePicker: View {

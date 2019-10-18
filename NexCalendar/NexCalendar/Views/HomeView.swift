@@ -1,24 +1,28 @@
-//
-//  ContentView.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/10/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Text("tutorials")
-                BadgeRow(categoryName: "Badges", badges: badgeData)
-
-                    
-            }.navigationBarTitle(Text("abc"))
+            ZStack {
+//                Image("background")
+//                    .resizable()
+//                    .edgesIgnoringSafeArea(.all)
+                Color.yellow.edgesIgnoringSafeArea(.all)
+                ScrollView(.vertical) {
+                    VStack {
+                        NavigationLink(destination: TutorialList()){
+                            CourseListNavButton()
+                        }.padding(.top)
+                        TutorialsRow(tutorials: tutorialsData)
+                        Spacer()
+                    }
+                }
+                .navigationBarTitle(Text("Home"))
+                .navigationBarItems(leading: Text("6 tutorials").foregroundColor(Color.gray), trailing: Button(action: {print("open settings")}) {
+                    Image(systemName: "wrench.fill")
+                })
+            }
         }
-        .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
     }
 }
 

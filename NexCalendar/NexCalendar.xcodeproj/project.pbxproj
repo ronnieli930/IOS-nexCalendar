@@ -7,22 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A716CCF3235A092B00B682DE /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = A716CCF2235A092B00B682DE /* courses.json */; };
 		A719C64A23562414000B114D /* ModalDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719C64923562414000B114D /* ModalDatePicker.swift */; };
 		A75B4C91234F248700D97AE7 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4C90234F248700D97AE7 /* AppView.swift */; };
 		A75B4C97234F44C900D97AE7 /* CalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4C96234F44C900D97AE7 /* CalendarHeader.swift */; };
 		A75B4C99234F61E800D97AE7 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4C98234F61E800D97AE7 /* CalendarCell.swift */; };
-		A75B4C9B234F643F00D97AE7 /* calendar.json in Resources */ = {isa = PBXBuildFile; fileRef = A75B4C9A234F643F00D97AE7 /* calendar.json */; };
 		A75B4C9D234F645700D97AE7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4C9C234F645700D97AE7 /* Data.swift */; };
-		A75B4C9F234F660100D97AE7 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4C9E234F660100D97AE7 /* Badge.swift */; };
-		A75B4CA2234F683B00D97AE7 /* BadgeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CA1234F683B00D97AE7 /* BadgeItem.swift */; };
-		A75B4CA4234F689200D97AE7 /* badges.json in Resources */ = {isa = PBXBuildFile; fileRef = A75B4CA3234F689200D97AE7 /* badges.json */; };
-		A75B4CA6234F6F3500D97AE7 /* BadgeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CA5234F6F3500D97AE7 /* BadgeRow.swift */; };
 		A75B4CAC234FA4D400D97AE7 /* CalendarWeekdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CAB234FA4D300D97AE7 /* CalendarWeekdays.swift */; };
 		A75B4CB7234FA8A000D97AE7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A75B4CB5234FA8A000D97AE7 /* Localizable.strings */; };
 		A75B4CBF234FC50700D97AE7 /* StyledDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CBE234FC50700D97AE7 /* StyledDate.swift */; };
 		A75B4CC52352F78200D97AE7 /* GregorianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CC42352F78200D97AE7 /* GregorianView.swift */; };
 		A75B4CC72352F87A00D97AE7 /* NexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CC62352F87A00D97AE7 /* NexView.swift */; };
 		A75B4CC92352FBB500D97AE7 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CC82352FBB500D97AE7 /* Calendar.swift */; };
+		A75FA5A4235A143F0062FE3D /* CourseIntroMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75FA5A3235A143F0062FE3D /* CourseIntroMain.swift */; };
+		A762058E235A201A003927B5 /* tutorials.json in Resources */ = {isa = PBXBuildFile; fileRef = A762058D235A201A003927B5 /* tutorials.json */; };
+		A7620590235A2035003927B5 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762058F235A2035003927B5 /* Tutorial.swift */; };
+		A7620592235A2053003927B5 /* TutorialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620591235A2053003927B5 /* TutorialCard.swift */; };
+		A7620594235A20CA003927B5 /* TutorialsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620593235A20C9003927B5 /* TutorialsRow.swift */; };
+		A7620596235A217E003927B5 /* CourseListNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620595235A217E003927B5 /* CourseListNavButton.swift */; };
+		A762059A235A3762003927B5 /* TutorialList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620599235A3762003927B5 /* TutorialList.swift */; };
+		A762059C235A3804003927B5 /* TutorialListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762059B235A3804003927B5 /* TutorialListRow.swift */; };
+		A762059E235A3856003927B5 /* TutorialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762059D235A3856003927B5 /* TutorialDetail.swift */; };
+		A76205A0235A4114003927B5 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = A762059F235A4114003927B5 /* questions.json */; };
+		A76205A2235A413B003927B5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205A1235A413B003927B5 /* Question.swift */; };
+		A76205A5235A5666003927B5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205A4235A5666003927B5 /* Helper.swift */; };
+		A76205A7235A5D5E003927B5 /* QuizCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205A6235A5D5E003927B5 /* QuizCover.swift */; };
+		A76205AB235A62C3003927B5 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205AA235A62C3003927B5 /* QuestionView.swift */; };
+		A76205AD235A71F3003927B5 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205AC235A71F3003927B5 /* AnswerView.swift */; };
 		A7DB8F4223563C9700CA21AA /* CalendarModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB8F4123563C9700CA21AA /* CalendarModePicker.swift */; };
 		A7F2583C234F1801001A4662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2583B234F1801001A4662 /* AppDelegate.swift */; };
 		A7F2583E234F1801001A4662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2583D234F1801001A4662 /* SceneDelegate.swift */; };
@@ -35,16 +46,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A716CCF2235A092B00B682DE /* courses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
 		A719C64923562414000B114D /* ModalDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDatePicker.swift; sourceTree = "<group>"; };
 		A75B4C90234F248700D97AE7 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		A75B4C96234F44C900D97AE7 /* CalendarHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeader.swift; sourceTree = "<group>"; };
 		A75B4C98234F61E800D97AE7 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
-		A75B4C9A234F643F00D97AE7 /* calendar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = calendar.json; sourceTree = "<group>"; };
 		A75B4C9C234F645700D97AE7 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		A75B4C9E234F660100D97AE7 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
-		A75B4CA1234F683B00D97AE7 /* BadgeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeItem.swift; sourceTree = "<group>"; };
-		A75B4CA3234F689200D97AE7 /* badges.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = badges.json; sourceTree = "<group>"; };
-		A75B4CA5234F6F3500D97AE7 /* BadgeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeRow.swift; sourceTree = "<group>"; };
 		A75B4CAB234FA4D300D97AE7 /* CalendarWeekdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWeekdays.swift; sourceTree = "<group>"; };
 		A75B4CB3234FA7C100D97AE7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		A75B4CB4234FA7C900D97AE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +61,21 @@
 		A75B4CC42352F78200D97AE7 /* GregorianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GregorianView.swift; sourceTree = "<group>"; };
 		A75B4CC62352F87A00D97AE7 /* NexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexView.swift; sourceTree = "<group>"; };
 		A75B4CC82352FBB500D97AE7 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		A75FA5A3235A143F0062FE3D /* CourseIntroMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseIntroMain.swift; sourceTree = "<group>"; };
+		A762058D235A201A003927B5 /* tutorials.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tutorials.json; sourceTree = "<group>"; };
+		A762058F235A2035003927B5 /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		A7620591235A2053003927B5 /* TutorialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCard.swift; sourceTree = "<group>"; };
+		A7620593235A20C9003927B5 /* TutorialsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsRow.swift; sourceTree = "<group>"; };
+		A7620595235A217E003927B5 /* CourseListNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListNavButton.swift; sourceTree = "<group>"; };
+		A7620599235A3762003927B5 /* TutorialList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialList.swift; sourceTree = "<group>"; };
+		A762059B235A3804003927B5 /* TutorialListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialListRow.swift; sourceTree = "<group>"; };
+		A762059D235A3856003927B5 /* TutorialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetail.swift; sourceTree = "<group>"; };
+		A762059F235A4114003927B5 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		A76205A1235A413B003927B5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		A76205A4235A5666003927B5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		A76205A6235A5D5E003927B5 /* QuizCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCover.swift; sourceTree = "<group>"; };
+		A76205AA235A62C3003927B5 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		A76205AC235A71F3003927B5 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 		A7DB8F4123563C9700CA21AA /* CalendarModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModePicker.swift; sourceTree = "<group>"; };
 		A7F25838234F1801001A4662 /* NexCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F2583B234F1801001A4662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,9 +117,10 @@
 		A75B4C95234F277800D97AE7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A75B4C9A234F643F00D97AE7 /* calendar.json */,
 				A75B4C9C234F645700D97AE7 /* Data.swift */,
-				A75B4CA3234F689200D97AE7 /* badges.json */,
+				A716CCF2235A092B00B682DE /* courses.json */,
+				A762058D235A201A003927B5 /* tutorials.json */,
+				A762059F235A4114003927B5 /* questions.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -105,10 +128,25 @@
 		A75B4CA0234F681800D97AE7 /* HomeSubViews */ = {
 			isa = PBXGroup;
 			children = (
-				A75B4CA1234F683B00D97AE7 /* BadgeItem.swift */,
-				A75B4CA5234F6F3500D97AE7 /* BadgeRow.swift */,
+				A75FA5A3235A143F0062FE3D /* CourseIntroMain.swift */,
+				A7620591235A2053003927B5 /* TutorialCard.swift */,
+				A7620593235A20C9003927B5 /* TutorialsRow.swift */,
+				A7620595235A217E003927B5 /* CourseListNavButton.swift */,
+				A7620599235A3762003927B5 /* TutorialList.swift */,
+				A762059B235A3804003927B5 /* TutorialListRow.swift */,
+				A762059D235A3856003927B5 /* TutorialDetail.swift */,
 			);
 			path = HomeSubViews;
+			sourceTree = "<group>";
+		};
+		A76205A3235A4479003927B5 /* QuizSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A76205A6235A5D5E003927B5 /* QuizCover.swift */,
+				A76205AA235A62C3003927B5 /* QuestionView.swift */,
+				A76205AC235A71F3003927B5 /* AnswerView.swift */,
+			);
+			path = QuizSubViews;
 			sourceTree = "<group>";
 		};
 		A7F2582F234F1801001A4662 = {
@@ -155,8 +193,10 @@
 		A7F2584F234F1812001A4662 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A75B4C9E234F660100D97AE7 /* Badge.swift */,
 				A75B4CC82352FBB500D97AE7 /* Calendar.swift */,
+				A762058F235A2035003927B5 /* Tutorial.swift */,
+				A76205A1235A413B003927B5 /* Question.swift */,
+				A76205A4235A5666003927B5 /* Helper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +208,7 @@
 				A7F2583F234F1801001A4662 /* HomeView.swift */,
 				A7F25855234F18D7001A4662 /* QuizView.swift */,
 				A75B4C90234F248700D97AE7 /* AppView.swift */,
+				A76205A3235A4479003927B5 /* QuizSubViews */,
 				A75B4CA0234F681800D97AE7 /* HomeSubViews */,
 				A75B4C92234F268600D97AE7 /* CalendarSubViews */,
 			);
@@ -234,11 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F25848234F1802001A4662 /* LaunchScreen.storyboard in Resources */,
+				A76205A0235A4114003927B5 /* questions.json in Resources */,
 				A75B4CB7234FA8A000D97AE7 /* Localizable.strings in Resources */,
 				A7F25845234F1802001A4662 /* Preview Assets.xcassets in Resources */,
 				A7F25842234F1802001A4662 /* Assets.xcassets in Resources */,
-				A75B4C9B234F643F00D97AE7 /* calendar.json in Resources */,
-				A75B4CA4234F689200D97AE7 /* badges.json in Resources */,
+				A716CCF3235A092B00B682DE /* courses.json in Resources */,
+				A762058E235A201A003927B5 /* tutorials.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,24 +291,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76205A2235A413B003927B5 /* Question.swift in Sources */,
+				A762059E235A3856003927B5 /* TutorialDetail.swift in Sources */,
+				A76205AD235A71F3003927B5 /* AnswerView.swift in Sources */,
 				A7DB8F4223563C9700CA21AA /* CalendarModePicker.swift in Sources */,
 				A75B4CC72352F87A00D97AE7 /* NexView.swift in Sources */,
+				A76205AB235A62C3003927B5 /* QuestionView.swift in Sources */,
 				A75B4CAC234FA4D400D97AE7 /* CalendarWeekdays.swift in Sources */,
 				A7F2583C234F1801001A4662 /* AppDelegate.swift in Sources */,
-				A75B4C9F234F660100D97AE7 /* Badge.swift in Sources */,
 				A75B4C97234F44C900D97AE7 /* CalendarHeader.swift in Sources */,
+				A762059C235A3804003927B5 /* TutorialListRow.swift in Sources */,
 				A7F2583E234F1801001A4662 /* SceneDelegate.swift in Sources */,
 				A75B4C91234F248700D97AE7 /* AppView.swift in Sources */,
 				A75B4CC52352F78200D97AE7 /* GregorianView.swift in Sources */,
 				A7F25856234F18D7001A4662 /* QuizView.swift in Sources */,
+				A7620596235A217E003927B5 /* CourseListNavButton.swift in Sources */,
+				A7620592235A2053003927B5 /* TutorialCard.swift in Sources */,
 				A7F25853234F18B8001A4662 /* CalendarView.swift in Sources */,
 				A7F25840234F1801001A4662 /* HomeView.swift in Sources */,
-				A75B4CA6234F6F3500D97AE7 /* BadgeRow.swift in Sources */,
+				A762059A235A3762003927B5 /* TutorialList.swift in Sources */,
 				A75B4CBF234FC50700D97AE7 /* StyledDate.swift in Sources */,
-				A75B4CA2234F683B00D97AE7 /* BadgeItem.swift in Sources */,
 				A75B4C9D234F645700D97AE7 /* Data.swift in Sources */,
+				A7620590235A2035003927B5 /* Tutorial.swift in Sources */,
 				A719C64A23562414000B114D /* ModalDatePicker.swift in Sources */,
+				A7620594235A20CA003927B5 /* TutorialsRow.swift in Sources */,
 				A75B4CC92352FBB500D97AE7 /* Calendar.swift in Sources */,
+				A76205A5235A5666003927B5 /* Helper.swift in Sources */,
+				A76205A7235A5D5E003927B5 /* QuizCover.swift in Sources */,
+				A75FA5A4235A143F0062FE3D /* CourseIntroMain.swift in Sources */,
 				A75B4C99234F61E800D97AE7 /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

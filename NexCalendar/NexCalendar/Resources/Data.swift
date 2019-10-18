@@ -1,11 +1,3 @@
-//
-//  Data.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/10/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import Foundation
 
 let gregorianWeekdays = [
@@ -30,7 +22,8 @@ let nexWeekdays = [
 
 let monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-let badgeData:[Badge] = load("badges.json")
+var tutorialsData: [Tutorial] = load("tutorials.json")
+let questionsData: [Question] = load("questions.json")
 
 func load<T:Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data

@@ -1,11 +1,3 @@
-//
-//  NexView.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/13/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct NexView: View {

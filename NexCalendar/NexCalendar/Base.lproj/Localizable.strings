@@ -1,11 +1,3 @@
-/* 
-  Localizable.strings
-  NexCalendar
-
-  Created by Ronnie Li on 10/11/19.
-  Copyright © 2019 Ronnie Li. All rights reserved.
-*/
-
 "sunday" = "Sun";
 "monday" = "Mon";
 "tuesday" = "Tue";

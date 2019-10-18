@@ -1,32 +1,25 @@
-//
-//  AppView.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/10/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct AppView: View {
-    @State private var selection = 1
+    @State private var selection = 0
     
     var body: some View {
         TabView (selection: $selection) {
             QuizView()
                 .tabItem {
                     Image(systemName: "square.and.pencil")
-                    Text("quiz")
+                    Text("Quiz")
             }.tag(0)
             HomeView()
                 .tabItem {
                     Image(systemName: "house")
-                    Text("home")
+                    Text("Home")
             }.tag(1)
             CalendarView()
                 .tabItem {
                     Image(systemName: "calendar")
-                    Text("calendar")
+                    Text("Calendar")
+                    
             }.tag(2)
         }
         .edgesIgnoringSafeArea(.top)
