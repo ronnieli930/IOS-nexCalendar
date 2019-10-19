@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct QuestionView: View {
+    @Binding var themeColor: ThemeColor
+    
     @State var questions: [Question]
     @State var index = 0
     @State var correctNum = 0
@@ -46,11 +48,12 @@ struct QuestionView: View {
                         }
                     }
                 }.padding()
-                .background(RoundedRectangle(cornerRadius: 14).foregroundColor(Color.black).opacity(0.14))
+                    .background(RoundedRectangle(cornerRadius: 14).foregroundColor(Color.black).opacity(0.1))
+                    
                 .padding()
                 Spacer()
             }.sheet(isPresented: $showAnswers, content: {
-                AnswerView(questions: self.questions, showAnswers: self.$showAnswers)
+                AnswerView(themeColor: self.$themeColor, questions: self.questions, showAnswers: self.$showAnswers)
             })
                 .alert(isPresented: $showResult) {
                     Alert(title: Text("Test Result:"), message: Text("correct: \(self.correctNum)"), primaryButton: .destructive(Text("Check Answer")){
@@ -63,7 +66,7 @@ struct QuestionView: View {
                         }))
                     
             }
-        }.background(Color.yellow)
+        }.background(getThemeMainColor(theme: self.themeColor))
             .edgesIgnoringSafeArea([.top, .bottom])
     }
     
@@ -88,6 +91,6 @@ struct QuestionView: View {
 
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
-        QuestionView(questions: questionsData)
+        QuestionView(themeColor: .constant(ThemeColor.ocean), questions: questionsData)
     }
 }

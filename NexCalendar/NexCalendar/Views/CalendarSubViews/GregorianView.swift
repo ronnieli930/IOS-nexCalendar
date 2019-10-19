@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct GregorianView: View {
+    @Binding var themeColor: ThemeColor
+    
     @State var selectedDay: Date?
     @Binding var displayYear: Int
     @Binding var displayMonth: Int
@@ -25,7 +27,7 @@ struct GregorianView: View {
                     .padding([.top, .trailing])
             }
             Divider()
-            CalendarWeekdays(type: .Gregorian)
+            CalendarWeekdays(type: .Gregorian, themeColor: self.$themeColor)
                 .padding(.horizontal, 10)
             VStack(alignment: .leading, spacing: 5) {
                 ForEach(monthsArr, id:  \.self) { week in
@@ -41,7 +43,8 @@ struct GregorianView: View {
                                         isSelected: self.selectedDay == day,
                                         isWeekend: self.isWeekend(day: day),
                                         isLeapDay: self.isLeapDay(day: day),
-                                        isLongSat: false
+                                        isLongSat: false,
+                                        theme: self.themeColor
                                     )).onTapGesture {
                                         self.handleOnTapped(day: day)
                                     }
@@ -192,6 +195,6 @@ struct GregorianView: View {
 
 struct GregorianView_Previews: PreviewProvider {
     static var previews: some View {
-        GregorianView(displayYear: .constant(2019), displayMonth: .constant(10), offset: .constant(CGSize.zero))
+        GregorianView(themeColor: .constant(ThemeColor.bright), displayYear: .constant(2019), displayMonth: .constant(10), offset: .constant(CGSize.zero))
     }
 }

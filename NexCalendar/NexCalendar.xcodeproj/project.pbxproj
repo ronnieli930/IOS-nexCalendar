@@ -19,7 +19,6 @@
 		A75B4CC52352F78200D97AE7 /* GregorianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CC42352F78200D97AE7 /* GregorianView.swift */; };
 		A75B4CC72352F87A00D97AE7 /* NexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CC62352F87A00D97AE7 /* NexView.swift */; };
 		A75B4CC92352FBB500D97AE7 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CC82352FBB500D97AE7 /* Calendar.swift */; };
-		A75FA5A4235A143F0062FE3D /* CourseIntroMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75FA5A3235A143F0062FE3D /* CourseIntroMain.swift */; };
 		A762058E235A201A003927B5 /* tutorials.json in Resources */ = {isa = PBXBuildFile; fileRef = A762058D235A201A003927B5 /* tutorials.json */; };
 		A7620590235A2035003927B5 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762058F235A2035003927B5 /* Tutorial.swift */; };
 		A7620592235A2053003927B5 /* TutorialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620591235A2053003927B5 /* TutorialCard.swift */; };
@@ -61,7 +60,6 @@
 		A75B4CC42352F78200D97AE7 /* GregorianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GregorianView.swift; sourceTree = "<group>"; };
 		A75B4CC62352F87A00D97AE7 /* NexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexView.swift; sourceTree = "<group>"; };
 		A75B4CC82352FBB500D97AE7 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
-		A75FA5A3235A143F0062FE3D /* CourseIntroMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseIntroMain.swift; sourceTree = "<group>"; };
 		A762058D235A201A003927B5 /* tutorials.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tutorials.json; sourceTree = "<group>"; };
 		A762058F235A2035003927B5 /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		A7620591235A2053003927B5 /* TutorialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCard.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 		A75B4CA0234F681800D97AE7 /* HomeSubViews */ = {
 			isa = PBXGroup;
 			children = (
-				A75FA5A3235A143F0062FE3D /* CourseIntroMain.swift */,
 				A7620591235A2053003927B5 /* TutorialCard.swift */,
 				A7620593235A20C9003927B5 /* TutorialsRow.swift */,
 				A7620595235A217E003927B5 /* CourseListNavButton.swift */,
@@ -318,7 +315,6 @@
 				A75B4CC92352FBB500D97AE7 /* Calendar.swift in Sources */,
 				A76205A5235A5666003927B5 /* Helper.swift in Sources */,
 				A76205A7235A5D5E003927B5 /* QuizCover.swift in Sources */,
-				A75FA5A4235A143F0062FE3D /* CourseIntroMain.swift in Sources */,
 				A75B4C99234F61E800D97AE7 /* CalendarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

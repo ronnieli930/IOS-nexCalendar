@@ -1,14 +1,18 @@
 import SwiftUI
 
 struct QuizView: View {
+    @Binding var themeColor: ThemeColor
+    
     @State var viewState = CGSize.zero
     @State var showQuestion = false
     
     var body: some View {
         ZStack {
-            Color.yellow.edgesIgnoringSafeArea(.all)
+            getThemeMainColor(theme: self.themeColor).edgesIgnoringSafeArea(.all)
             QuizCover(viewState: self.$viewState, showQuestion: self.$showQuestion)
-                .sheet(isPresented: $showQuestion, content: {QuestionView(questions: self.getQuestions())})
+                .sheet(isPresented: $showQuestion, content: {
+                    QuestionView(themeColor: self.$themeColor, questions: self.getQuestions())
+                })
         }
     }
     
@@ -21,6 +25,6 @@ struct QuizView: View {
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView()
+        QuizView(themeColor: .constant(ThemeColor.bright))
     }
 }

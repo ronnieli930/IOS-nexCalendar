@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct NexView: View {
+    @Binding var themeColor: ThemeColor
+    
     @State var selectedDay: Date?
     @Binding var displayYear: Int
     @Binding var displayMonth: Int
@@ -25,7 +27,7 @@ struct NexView: View {
                     .padding([.top, .trailing])
             }
             Divider()
-            CalendarWeekdays(type: .Nex)
+            CalendarWeekdays(type: .Nex, themeColor: self.$themeColor)
                 .padding([.leading, .trailing], 10)
             VStack(alignment: .leading, spacing: 5) {
                 ForEach(monthsArr, id:  \.self) { week in
@@ -41,7 +43,8 @@ struct NexView: View {
                                         isSelected: self.selectedDay == day,
                                         isWeekend: self.isWeekend(day: day),
                                         isLeapDay: self.isLeapDay(day: day),
-                                        isLongSat: self.isLongSat(day: day)
+                                        isLongSat: self.isLongSat(day: day),
+                                        theme: self.themeColor
                                     )).onTapGesture {
                                         self.handleOnTapped(day: day)
                                     }
@@ -231,7 +234,7 @@ struct NexView: View {
 
 struct NexView_Previews: PreviewProvider {
     static var previews: some View {
-        NexView(displayYear: .constant(2020), displayMonth: .constant(8), offset: .constant(CGSize.zero))
+        NexView(themeColor: .constant(ThemeColor.bright), displayYear: .constant(2020), displayMonth: .constant(8), offset: .constant(CGSize.zero))
     }
 }
 

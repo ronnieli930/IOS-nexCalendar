@@ -8,8 +8,9 @@ struct StyledDate {
     var isWeekend : Bool = false
     var isLeapDay : Bool = false
     var isLongSat : Bool = false
+    var theme: ThemeColor
     
-    init(date: Date, isPast: Bool, isToday: Bool, isSelected: Bool, isWeekend: Bool, isLeapDay: Bool, isLongSat: Bool) {
+    init(date: Date, isPast: Bool, isToday: Bool, isSelected: Bool, isWeekend: Bool, isLeapDay: Bool, isLongSat: Bool, theme: ThemeColor) {
         self.date = date
         self.isPast = isPast
         self.isToday = isToday
@@ -17,6 +18,7 @@ struct StyledDate {
         self.isWeekend = isWeekend
         self.isLeapDay = isLeapDay
         self.isLongSat = isLongSat
+        self.theme = theme
     }
     
     func getText() -> String {
@@ -33,7 +35,7 @@ struct StyledDate {
     func getTextColor() -> Color{
         var textColor = Color.white
         if isWeekend {
-            textColor = Color.yellow
+            textColor = getThemeMainColor(theme: theme)
         }else if isPast {
             textColor = Color.white
         }else if isSelected || isToday{

@@ -1,21 +1,22 @@
 import SwiftUI
 
 struct AppView: View {
-    @State private var selection = 0
+    @State private var selection = 1
+    @State var themeColor = ThemeColor.bright
     
     var body: some View {
         TabView (selection: $selection) {
-            QuizView()
+            QuizView(themeColor: self.$themeColor)
                 .tabItem {
                     Image(systemName: "square.and.pencil")
                     Text("Quiz")
             }.tag(0)
-            HomeView()
+            HomeView(themeColor: self.$themeColor)
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
             }.tag(1)
-            CalendarView()
+            CalendarView(themeColor: self.$themeColor)
                 .tabItem {
                     Image(systemName: "calendar")
                     Text("Calendar")

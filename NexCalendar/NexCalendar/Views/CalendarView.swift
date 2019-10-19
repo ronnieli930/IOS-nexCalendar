@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct CalendarView: View {
+    @Binding var themeColor: ThemeColor
     
     @State var displayMode: Int = 1
     @State var showDatePicker: Bool = false
@@ -18,7 +19,6 @@ struct CalendarView: View {
     var body: some View {
         NavigationView {
             ZStack {
-//                Color.yellow.edgesIgnoringSafeArea(.all)
                 Image("background")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
@@ -28,20 +28,20 @@ struct CalendarView: View {
                     if displayMode == 0 {
                         //Gregorian Mode
                         Spacer()
-                        GregorianView(displayYear: $gregYear, displayMonth: $gregMonth, offset: $gregOffset)
+                        GregorianView(themeColor: $themeColor, displayYear: $gregYear, displayMonth: $gregMonth, offset: $gregOffset)
                         Spacer()
                         Spacer()
                     }else if displayMode == 1 {
                         //                    // Nex Mode
                         Spacer()
-                        NexView(displayYear: $nexYear, displayMonth: $nexMonth, offset: $nexOffset)
+                        NexView(themeColor: $themeColor, displayYear: $nexYear, displayMonth: $nexMonth, offset: $nexOffset)
                         Spacer()
                         Spacer()
                     } else if displayMode == 2{
                         ScrollView(.vertical, showsIndicators: true) {
-                            GregorianView(displayYear: $gregYear, displayMonth: $gregMonth, offset: $gregOffset)
+                            GregorianView(themeColor: $themeColor, displayYear: $gregYear, displayMonth: $gregMonth, offset: $gregOffset)
                             Divider()
-                            NexView(displayYear: $nexYear, displayMonth: $nexMonth, offset: $nexOffset)
+                            NexView(themeColor: $themeColor, displayYear: $nexYear, displayMonth: $nexMonth, offset: $nexOffset)
                         }
                         
                     }
@@ -60,7 +60,7 @@ struct CalendarView: View {
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CalendarView().previewDisplayName("combined")
+            CalendarView(themeColor: .constant(ThemeColor.dark)).previewDisplayName("combined")
             //            GregorianView(displayYear: .constant(2020), displayMonth: .constant(2)).previewDisplayName("Gregorian")
             //            NexView(displayYear: .constant(2019), displayMonth: .constant(10)).previewDisplayName("NexCalendar")
         }

@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct AnswerView: View {
+    @Binding var themeColor: ThemeColor
+    
     @State var questions: [Question]
     @Binding var showAnswers: Bool
     
@@ -49,7 +51,7 @@ struct AnswerView: View {
                     .padding()
                 Spacer()
             }
-        }.background(Color.yellow)
+        }.background(getThemeMainColor(theme: self.themeColor))
             .edgesIgnoringSafeArea([.top, .bottom])
     }
     
@@ -71,6 +73,6 @@ struct AnswerView: View {
 
 struct AnswerView_Previews: PreviewProvider {
     static var previews: some View {
-        AnswerView(questions: Array(questionsData.prefix(5)), showAnswers: .constant(true))
+        AnswerView(themeColor: .constant(ThemeColor.bright), questions: Array(questionsData.prefix(5)), showAnswers: .constant(true))
     }
 }

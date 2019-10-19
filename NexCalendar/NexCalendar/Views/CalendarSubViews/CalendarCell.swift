@@ -49,17 +49,17 @@ struct CalendarCell: View {
 struct CalendarCell_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: false, isSelected: false, isWeekend: false, isLeapDay: false, isLongSat: false))
+            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: false, isSelected: false, isWeekend: false, isLeapDay: false, isLongSat: false, theme: ThemeColor.bright))
                 .previewDisplayName("Control")
-            CalendarCell(styledDate: StyledDate(date: Date(), isPast: true, isToday: false, isSelected: false, isWeekend: false, isLeapDay: false, isLongSat: false))
+            CalendarCell(styledDate: StyledDate(date: Date(), isPast: true, isToday: false, isSelected: false, isWeekend: false, isLeapDay: false, isLongSat: false, theme: ThemeColor.bright))
                 .previewDisplayName("Past")
-            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: true, isSelected: false, isWeekend: false, isLeapDay: false, isLongSat: false))
+            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: true, isSelected: false, isWeekend: false, isLeapDay: false, isLongSat: false, theme: ThemeColor.bright))
                 .previewDisplayName("Today")
-            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: false, isSelected: true, isWeekend: false, isLeapDay: false, isLongSat: false))
+            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: false, isSelected: true, isWeekend: false, isLeapDay: false, isLongSat: false, theme: ThemeColor.bright))
                 .previewDisplayName("Selected")
-            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: false, isSelected: false, isWeekend: false, isLeapDay: true, isLongSat: false))
+            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: false, isSelected: false, isWeekend: false, isLeapDay: true, isLongSat: false, theme: ThemeColor.bright))
                 .previewDisplayName("leap")
-            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: false, isSelected: false, isWeekend: false, isLeapDay: false, isLongSat: true))
+            CalendarCell(styledDate: StyledDate(date: Date(), isPast: false, isToday: false, isSelected: false, isWeekend: false, isLeapDay: false, isLongSat: true, theme: ThemeColor.bright))
                 .previewDisplayName("Long Saturday")
         }.previewLayout(.fixed(width: 300, height: 70))
             .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)

@@ -25,3 +25,23 @@ extension Color {
         )
     }
 }
+
+enum ThemeColor {
+    case bright
+    case ocean
+    case forest
+    case dark
+}
+
+func getThemeMainColor(theme t: ThemeColor) -> Color {
+    switch t {
+    case .bright:
+        return Color.yellow
+    case .ocean:
+        return Color(hex: 0x3688da)
+    case .forest:
+        return Color.green
+    case .dark:
+        return Color(hex: 0x484848)
+    }
+}

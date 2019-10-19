@@ -29,7 +29,7 @@ struct QuizCover: View {
                 .fontWeight(.heavy)
                 .foregroundColor(Color(hex: 0x484848))
                 .padding(.leading, 30)
-                .padding(.top, 5)
+                .padding(.top, 15)
             Text("How much do you know about the NexCalendar? Here are some Multiple questions for you :-)")
                 .font(.system(size: 20))
                 .fontWeight(.medium)

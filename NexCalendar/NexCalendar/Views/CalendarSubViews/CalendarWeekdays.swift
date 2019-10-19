@@ -2,6 +2,7 @@ import SwiftUI
 
 struct CalendarWeekdays: View {
     @State var type: calendarType
+    @Binding var themeColor: ThemeColor
     
     var body: some View {
         HStack(alignment: .center){
@@ -9,11 +10,13 @@ struct CalendarWeekdays: View {
                 Text(weekday)
                     .font(.body)
                     .fontWeight(.bold)
-                    .foregroundColor(Color.yellow)
+                    .foregroundColor(getThemeMainColor(theme: self.themeColor))
                     .frame(minWidth: 0, maxWidth: .infinity)
             }
         }
     }
+    
+    
     
     func getWeekdays() -> [String] {
         return self.type == calendarType.Gregorian ? gregorianWeekdays : nexWeekdays
@@ -22,7 +25,7 @@ struct CalendarWeekdays: View {
 
 struct CalendarWeekdays_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarWeekdays(type: .Gregorian)
+        CalendarWeekdays(type: .Gregorian, themeColor: .constant(ThemeColor.bright))
             .previewLayout(.fixed(width: 600, height: 70))
     }
 }
