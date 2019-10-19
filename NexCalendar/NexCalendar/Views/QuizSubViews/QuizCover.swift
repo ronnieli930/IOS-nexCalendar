@@ -1,11 +1,3 @@
-//
-//  QuizCover.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/19/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct QuizCover: View {
@@ -18,26 +10,30 @@ struct QuizCover: View {
                 .resizable()
                 .frame(width: 400, height: 400)
                 .shadow(radius: 5)
-            Text("<<<   Swipe To Continue >>>")
-                .font(.system(size: 18))
+            VStack(alignment: .leading) {
+                Text("Are you Ready?")
+                    .font(.title)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color(hex: 0x484848))
+                    .padding(.leading, 30)
+                    .padding(.top, 5)
+                Text("How much do you know about the NexCalendar? Here are some Multiple questions for you ;-)")
+                    .font(.system(size: 20))
+                    .fontWeight(.medium)
+                    .foregroundColor(Color(hex: 0x484848))
+                    .padding(.horizontal, 30)
+                    .padding([.top, .bottom], 10)
+            }.background(LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.4),
+                                                                    Color.white.opacity(0.1), Color.clear]), startPoint: .top, endPoint: .bottom))
+            Text("<<< Swipe To Continue >>>")
+                .font(.system(size: 22))
                 .fontWeight(.heavy)
                 .foregroundColor(Color.white)
                 .shadow(radius: 2)
-                .padding([.top, .leading], 30)
-            Text("Are you Ready?")
-                .font(.title)
-                .fontWeight(.heavy)
-                .foregroundColor(Color(hex: 0x484848))
-                .padding(.leading, 30)
-                .padding(.top, 15)
-            Text("How much do you know about the NexCalendar? Here are some Multiple questions for you :-)")
-                .font(.system(size: 20))
-                .fontWeight(.medium)
-                .foregroundColor(Color(hex: 0x484848))
-                .padding(.horizontal, 30)
-                .padding(.top, 10)
+                .padding([.top, .leading, .bottom], 30)
             Spacer()
         }.navigationBarTitle("Quiz")
+            
             .animation(.easeInOut)
             .border(Color.gray, width: 1)
             .blur(radius: self.viewState.width > 130 || self.viewState.width < -130 ? 7 : 0 )

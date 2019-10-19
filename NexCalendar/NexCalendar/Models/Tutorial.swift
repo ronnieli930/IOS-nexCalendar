@@ -7,3 +7,9 @@ struct Tutorial: Hashable, Codable, Identifiable {
     var isStarred: Bool
     var content: String
 }
+
+func markStar(tutorialIndex i: Int) {
+    tutorialsData[i].isStarred.toggle()
+    print(tutorialsData[i].id)
+}
+

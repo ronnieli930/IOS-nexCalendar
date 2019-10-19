@@ -2,15 +2,16 @@ import SwiftUI
 
 struct TutorialsRow: View {
     @Binding var themeColor: ThemeColor
-    var tutorials: [Tutorial]
+    @Binding var tutorials: [Tutorial]
+    
     
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 20) {
-                    ForEach (self.tutorials){ tut in
+                    ForEach (0 ..< self.tutorials.count){ index in
                         VStack {
-                            TutorialCard(theme: self.themeColor, tutorial: tut)
+                            TutorialCard(theme: self.themeColor, tutorials: self.$tutorials, index: index)
                         }
                     }
                 }
@@ -21,6 +22,6 @@ struct TutorialsRow: View {
 
 struct TutorialsRow_Previews: PreviewProvider {
     static var previews: some View {
-        TutorialsRow(themeColor: .constant(ThemeColor.bright), tutorials: tutorialsData)
+        TutorialsRow(themeColor: .constant(ThemeColor.tropical), tutorials: .constant(tutorialsData))
     }
 }

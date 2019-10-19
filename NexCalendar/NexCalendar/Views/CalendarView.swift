@@ -14,8 +14,6 @@ struct CalendarView: View {
     @State var nexMonth = calendar.component(.month, from: today)
     @State private var nexOffset = CGSize.zero
     
-    
-    
     var body: some View {
         NavigationView {
             ZStack {
@@ -45,7 +43,7 @@ struct CalendarView: View {
                         }
                         
                     }
-                }
+                }.animation(.easeInOut)
                 .navigationBarTitle(Text("Calendar"), displayMode: .large)
                 .navigationBarItems(trailing: Button(action: {self.showDatePicker.toggle()}) {HStack {
                     Image(systemName: "keyboard.chevron.compact.down")

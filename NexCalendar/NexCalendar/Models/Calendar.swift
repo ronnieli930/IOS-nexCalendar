@@ -36,13 +36,8 @@ struct FormattedDate : Comparable {
     
 }
 
-
 let calendar = Calendar.current
 let today = Date()
-
-//test
-var component = DateComponents(calendar: calendar, year: 2020, month: 12, day: 31)
-//let today = calendar.date(from: component)!
 
 func monthToString(month: Int) -> String {
     return monthArr[month - 1]

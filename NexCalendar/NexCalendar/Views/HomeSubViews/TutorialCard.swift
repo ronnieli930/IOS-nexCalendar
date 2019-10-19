@@ -2,20 +2,21 @@ import SwiftUI
 
 struct TutorialCard: View {
     var theme: ThemeColor
-    var tutorial: Tutorial
+    @Binding var tutorials: [Tutorial]
+    var index: Int
     
     var body: some View {
-        NavigationLink(destination: TutorialDetail(theme: theme, tutorial: tutorial)) {
+        NavigationLink(destination: TutorialDetail(theme: theme, tutorials: self.$tutorials, index: index)) {
             ZStack {
                 LinearGradient(gradient: .init(colors: self.getGradientColors(theme: self.theme)), startPoint: .bottomLeading, endPoint: .topTrailing)
                 VStack {
-                    Text("\(tutorial.id).")
+                    Text("\(tutorials[index].id).")
                         .font(.largeTitle)
                         .fontWeight(.black)
                         .foregroundColor(Color.white)
                         .padding(.top, 10)
                     Spacer()
-                    Text(tutorial.title)
+                    Text(tutorials[index].title)
                         .font(.body)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
@@ -32,7 +33,7 @@ struct TutorialCard: View {
     
     func getGradientColors(theme t: ThemeColor) -> [Color] {
         switch t {
-        case .bright:
+        case .tropical:
             return [Color.pink,Color.red, Color.orange, Color.yellow]
         case .ocean:
             return [Color.init(red: 60/255, green: 1/255, blue: 240/255), Color.init(red: 2/255, green: 100/255, blue: 223/255), Color.init(red: 1/255, green: 230/255, blue: 223/255)]
@@ -44,9 +45,8 @@ struct TutorialCard: View {
     }
 }
 
-
 struct TutorialCard_Previews: PreviewProvider {
     static var previews: some View {
-        TutorialCard(theme: ThemeColor.forest, tutorial: tutorialsData[0])
+        TutorialCard(theme: ThemeColor.forest, tutorials: .constant(tutorialsData), index: 0)
     }
 }

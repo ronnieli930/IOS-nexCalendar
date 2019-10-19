@@ -1,13 +1,14 @@
 import SwiftUI
 
 struct TutorialListRow: View {
-    @State var tutorial: Tutorial
+    @Binding var tutorials: [Tutorial]
+    var index: Int
     
     var body: some View {
         HStack {
-            Text(tutorial.title)
+            Text(tutorials[index].title)
             Spacer()
-            if tutorial.isStarred {
+            if tutorials[index].isStarred {
                 Image(systemName: "star.circle.fill")
                     .imageScale(.medium)
                     .foregroundColor(.yellow)
@@ -18,6 +19,6 @@ struct TutorialListRow: View {
 
 struct TutorialListRow_Previews: PreviewProvider {
     static var previews: some View {
-        TutorialListRow(tutorial: tutorialsData[0])
+        TutorialListRow(tutorials: .constant(tutorialsData), index: 0)
     }
 }

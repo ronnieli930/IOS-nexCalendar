@@ -31,7 +31,6 @@ struct ModalDatePicker: View {
                         .background(Rectangle()
                             .frame(width: 70, height: 40)
                             .cornerRadius(12))
-                    
                 }
             }
         }

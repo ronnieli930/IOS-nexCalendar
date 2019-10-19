@@ -69,10 +69,10 @@
         "id": 7,
         "title": "The leap day is _______ in NexCalendar.",
         "options": [
-            "at the beginning of the year",
-            "in the middle of the year",
-            "at the end of the year",
-            "none of the above"
+            "At the beginning of the year",
+            "In the middle of the year",
+            "At the end of the year",
+            "None of the above"
         ],
         "answer": 2
     },

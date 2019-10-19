@@ -1,11 +1,3 @@
-//
-//  QuestionView.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/19/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct QuestionView: View {
@@ -31,9 +23,10 @@ struct QuestionView: View {
                 Divider()
                 VStack {
                     Text(questions[index].title)
-                        .font(.body)
+                        .font(.callout)
                         .fontWeight(.medium)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color.white)
+                        .lineLimit(4)
                     Divider()
                     VStack {
                         ForEach(0..<questions[index].options.count, id: \.self) {op in
@@ -49,8 +42,7 @@ struct QuestionView: View {
                     }
                 }.padding()
                     .background(RoundedRectangle(cornerRadius: 14).foregroundColor(Color.black).opacity(0.1))
-                    
-                .padding()
+                    .padding()
                 Spacer()
             }.sheet(isPresented: $showAnswers, content: {
                 AnswerView(themeColor: self.$themeColor, questions: self.questions, showAnswers: self.$showAnswers)

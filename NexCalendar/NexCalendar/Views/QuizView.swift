@@ -25,6 +25,6 @@ struct QuizView: View {
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView(themeColor: .constant(ThemeColor.bright))
+        QuizView(themeColor: .constant(ThemeColor.tropical))
     }
 }

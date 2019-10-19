@@ -16,8 +16,6 @@ struct CalendarWeekdays: View {
         }
     }
     
-    
-    
     func getWeekdays() -> [String] {
         return self.type == calendarType.Gregorian ? gregorianWeekdays : nexWeekdays
     }
@@ -25,7 +23,7 @@ struct CalendarWeekdays: View {
 
 struct CalendarWeekdays_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarWeekdays(type: .Gregorian, themeColor: .constant(ThemeColor.bright))
+        CalendarWeekdays(type: .Gregorian, themeColor: .constant(ThemeColor.dark))
             .previewLayout(.fixed(width: 600, height: 70))
     }
 }

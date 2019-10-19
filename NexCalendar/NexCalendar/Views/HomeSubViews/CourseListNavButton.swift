@@ -26,7 +26,7 @@ struct CourseListNavButton: View {
     
     func getCourseListNavButtonThemeColor(theme t: ThemeColor) -> Color {
         switch t {
-        case .bright:
+        case .tropical:
             return Color(hex: 0xfd7c2f)
         case .ocean:
             return Color(hex: 0x0044b2)
@@ -40,6 +40,6 @@ struct CourseListNavButton: View {
 
 struct CourseListNavButton_Previews: PreviewProvider {
     static var previews: some View {
-        CourseListNavButton(themeColor: .constant(ThemeColor.bright))
+        CourseListNavButton(themeColor: .constant(ThemeColor.tropical))
     }
 }

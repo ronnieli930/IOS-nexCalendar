@@ -2,7 +2,8 @@ import SwiftUI
 
 struct TutorialDetail: View {
     var theme: ThemeColor
-    @State var tutorial: Tutorial
+    @Binding var tutorials: [Tutorial]
+    var index: Int
     
     var body: some View {
         VStack {
@@ -13,11 +14,11 @@ struct TutorialDetail: View {
                 .shadow(radius: 5)
             ScrollView(.vertical) {
                 VStack {
-                    Text(tutorial.title)
+                    Text(tutorials[index].title)
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
-                    Text(tutorial.content)
+                    Text(tutorials[index].content)
                         .foregroundColor(Color.white)
                         .padding(.top, 20)
                     }.padding()
@@ -25,12 +26,21 @@ struct TutorialDetail: View {
             }.padding()
             Spacer()
         }.background(getThemeMainColor(theme: theme))
+        .navigationBarItems(trailing: Button(action: {
+            self.tutorials[self.index].isStarred.toggle()
+            markStar(tutorialIndex: self.index)
+        }){
+            HStack {
+                Image(systemName: tutorials[index].isStarred ? "star.fill" : "star")
+                Text(tutorials[index].isStarred ? "Unstar" : "Star")
+            }
+        })
             .edgesIgnoringSafeArea(.top)
     }
 }
 
 struct TutorialDetail_Previews: PreviewProvider {
     static var previews: some View {
-        TutorialDetail(theme: ThemeColor.bright, tutorial: tutorialsData[4])
+        TutorialDetail(theme: ThemeColor.tropical, tutorials: .constant(tutorialsData), index: 2)
     }
 }

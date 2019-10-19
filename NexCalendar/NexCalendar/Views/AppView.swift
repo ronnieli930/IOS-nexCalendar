@@ -2,7 +2,7 @@ import SwiftUI
 
 struct AppView: View {
     @State private var selection = 1
-    @State var themeColor = ThemeColor.bright
+    @State var themeColor = ThemeColor.tropical
     
     var body: some View {
         TabView (selection: $selection) {

@@ -195,6 +195,6 @@ struct GregorianView: View {
 
 struct GregorianView_Previews: PreviewProvider {
     static var previews: some View {
-        GregorianView(themeColor: .constant(ThemeColor.bright), displayYear: .constant(2019), displayMonth: .constant(10), offset: .constant(CGSize.zero))
+        GregorianView(themeColor: .constant(ThemeColor.tropical), displayYear: .constant(2019), displayMonth: .constant(10), offset: .constant(CGSize.zero))
     }
 }

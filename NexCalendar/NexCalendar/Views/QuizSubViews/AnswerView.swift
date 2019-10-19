@@ -1,11 +1,3 @@
-//
-//  AnswerView.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/19/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import SwiftUI
 
 struct AnswerView: View {
@@ -20,15 +12,14 @@ struct AnswerView: View {
                 Image("answerSheet")
                     .resizable()
                     .frame(height: 300)
-                VStack(alignment: .center, spacing: 20) {
+                VStack(alignment: .leading, spacing: 20) {
                     Text("Answers")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
-                        .shadow(radius: 2)
                     Divider()
                     ForEach(questions) {q in
-                        VStack {
+                        VStack(alignment: .leading) {
                             Text(q.title)
                                 .font(.body)
                                 .foregroundColor(Color(hex: 0x484848))
@@ -73,6 +64,6 @@ struct AnswerView: View {
 
 struct AnswerView_Previews: PreviewProvider {
     static var previews: some View {
-        AnswerView(themeColor: .constant(ThemeColor.bright), questions: Array(questionsData.prefix(5)), showAnswers: .constant(true))
+        AnswerView(themeColor: .constant(ThemeColor.dark), questions: Array(questionsData.prefix(5)), showAnswers: .constant(true))
     }
 }

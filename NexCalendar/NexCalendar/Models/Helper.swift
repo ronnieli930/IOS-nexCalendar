@@ -1,11 +1,3 @@
-//
-//  Helper.swift
-//  NexCalendar
-//
-//  Created by Ronnie Li on 10/19/19.
-//  Copyright © 2019 Ronnie Li. All rights reserved.
-//
-
 import Foundation
 import SwiftUI
 
@@ -27,7 +19,7 @@ extension Color {
 }
 
 enum ThemeColor {
-    case bright
+    case tropical
     case ocean
     case forest
     case dark
@@ -35,10 +27,10 @@ enum ThemeColor {
 
 func getThemeMainColor(theme t: ThemeColor) -> Color {
     switch t {
-    case .bright:
+    case .tropical:
         return Color.yellow
     case .ocean:
-        return Color(hex: 0x3688da)
+        return Color(hex: 0x65e5ff)
     case .forest:
         return Color.green
     case .dark:

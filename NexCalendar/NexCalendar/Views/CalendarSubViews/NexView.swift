@@ -234,7 +234,7 @@ struct NexView: View {
 
 struct NexView_Previews: PreviewProvider {
     static var previews: some View {
-        NexView(themeColor: .constant(ThemeColor.bright), displayYear: .constant(2020), displayMonth: .constant(8), offset: .constant(CGSize.zero))
+        NexView(themeColor: .constant(ThemeColor.tropical), displayYear: .constant(2020), displayMonth: .constant(8), offset: .constant(CGSize.zero))
     }
 }
 
