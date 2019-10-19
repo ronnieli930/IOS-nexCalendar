@@ -26,7 +26,7 @@ struct QuestionView: View {
                         .font(.callout)
                         .fontWeight(.medium)
                         .foregroundColor(Color.white)
-                        .lineLimit(4)
+                        .lineLimit(20)
                     Divider()
                     VStack {
                         ForEach(0..<questions[index].options.count, id: \.self) {op in
