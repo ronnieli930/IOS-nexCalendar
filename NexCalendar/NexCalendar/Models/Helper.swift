@@ -34,6 +34,6 @@ func getThemeMainColor(theme t: ThemeColor) -> Color {
     case .forest:
         return Color.green
     case .dark:
-        return Color(hex: 0x484848)
+        return Color(hex: 0x888888)
     }
 }
