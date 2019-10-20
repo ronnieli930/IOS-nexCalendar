@@ -32,7 +32,7 @@ struct TutorialDetail: View {
         }){
             HStack {
                 Image(systemName: tutorials[index].isStarred ? "star.fill" : "star")
-                Text(tutorials[index].isStarred ? "Unstar" : "Star")
+                Text(tutorials[index].isStarred ? NSLocalizedString("unstar", comment: "") : NSLocalizedString("star", comment: ""))
             }
         })
             .edgesIgnoringSafeArea(.top)

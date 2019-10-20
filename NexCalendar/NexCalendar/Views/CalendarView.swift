@@ -44,10 +44,10 @@ struct CalendarView: View {
                         
                     }
                 }.animation(.easeInOut)
-                .navigationBarTitle(Text("Calendar"), displayMode: .large)
+                    .navigationBarTitle(Text(NSLocalizedString("calendar", comment: "")), displayMode: .large)
                 .navigationBarItems(trailing: Button(action: {self.showDatePicker.toggle()}) {HStack {
                     Image(systemName: "keyboard.chevron.compact.down")
-                    Text("Date")
+                    Text(NSLocalizedString("date", comment: ""))
                     }})
             }
         }.sheet(isPresented: $showDatePicker, content: {ModalDatePicker(showModal: self.$showDatePicker, gregYear: self.$gregYear, gregMonth: self.$gregMonth, nexYear: self.$nexYear, nexMonth: self.$nexMonth)})

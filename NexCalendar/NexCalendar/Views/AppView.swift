@@ -9,17 +9,17 @@ struct AppView: View {
             QuizView(themeColor: self.$themeColor)
                 .tabItem {
                     Image(systemName: "square.and.pencil")
-                    Text("Quiz")
+                    Text(NSLocalizedString("quiz", comment: ""))
             }.tag(0)
             HomeView(themeColor: self.$themeColor)
                 .tabItem {
                     Image(systemName: "house")
-                    Text("Home")
+                    Text(NSLocalizedString("home", comment: ""))
             }.tag(1)
             CalendarView(themeColor: self.$themeColor)
                 .tabItem {
                     Image(systemName: "calendar")
-                    Text("Calendar")
+                    Text(NSLocalizedString("calendar", comment: ""))
                     
             }.tag(2)
         }

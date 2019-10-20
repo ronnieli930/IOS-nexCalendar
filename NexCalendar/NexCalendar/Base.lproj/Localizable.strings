@@ -1,3 +1,4 @@
+//calendar
 "sunday" = "Sun";
 "monday" = "Mon";
 "tuesday" = "Tue";
@@ -6,6 +7,62 @@
 "friday" = "Fri";
 "saturday" = "Sat";
 
+"january" = "January";
+"february" = "February";
+"march" = "March";
+"april" = "April";
+"may" = "May";
+"june" = "June";
+"july" = "July";
+"august" = "August";
+"september" = "September";
+"october" = "October";
+"november" = "November";
+"december" = "December";
+
 "leap" = "Leap";
 "long" = "Long";
+
+"calendar" = "Calendar";
+"gregorian" = "Gregorian";
+"nex" = "Nex";
+"both" = "Both";
+"date" = "Date";
+
+//home
+"quiz" = "Quiz";
+"home" = "Home";
+"6tutorials" = "6 tutorials";
+"explore_nexcalendar" = "Explore\nNexCalendar";
+
+//theme
+"change_theme" = "Change Theme";
+"tropical" = "Tropical";
+"ocean" = "Ocean";
+"forest" = "Forest";
+"Dark" = "Dark";
+
+"select_date" = "Select Date";
+"update" = "Update";
+"tutorial_list" = "Tutorial List";
+"starred_tutorials" = "Starred Tutorials";
+
+//quiz
+"are_you_ready" = "Are you ready?";
+"quiz_cover_intro" = "How much do you know about the NexCalendar? Here are some Multiple questions for you ;-)";
+"swipe_to_continue" = "<<< Swipe To Continue >>>";
+"redo" = "Redo";
+"check_answer" = "Check Answer";
+"test_result" = "Test Result";
+"correct" = "Correct: ";
+"answers" = "Answers";
+"close" = "Close";
+
+//tutorial
+"star" = "Star";
+"unstar" = "Unstar";
+
+//data
+"tutorials.json" = "tutorials-en.json";
+"questions.json" = "questions-en.json";
 

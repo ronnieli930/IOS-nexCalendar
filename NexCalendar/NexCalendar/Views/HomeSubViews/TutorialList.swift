@@ -8,7 +8,7 @@ struct TutorialList: View {
     var body: some View {
         List {
             Toggle(isOn: self.$showStarred){
-                Text("Starred Tutorials")
+                Text(NSLocalizedString("starred_tutorials", comment: ""))
                     .bold()
             }
             ForEach(0..<self.tutorials.count) { index in
@@ -21,7 +21,7 @@ struct TutorialList: View {
             
         }
         .animation(.easeInOut)
-        .navigationBarTitle(Text("Tutorial List"))
+        .navigationBarTitle(Text(NSLocalizedString("tutorial_list", comment: "")))
     }
 }
 

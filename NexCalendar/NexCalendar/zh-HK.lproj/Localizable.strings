@@ -1,0 +1,61 @@
+"sunday" = "日";
+"monday" = "一";
+"tuesday" = "二";
+"wednesday" = "三";
+"thursday" = "四";
+"friday" = "五";
+"saturday" = "六";
+
+"january" = "一月";
+"february" = "二月";
+"march" = "三月";
+"april" = "四月";
+"may" = "五月";
+"june" = "六月";
+"july" = "七月";
+"august" = "八月";
+"september" = "九月";
+"october" = "十月";
+"november" = "十一月";
+"december" = "十二月";
+
+"leap" = "閏";
+"long" = "長";
+
+"calendar" = "日曆";
+"gregorian" = "格里曆";
+"nex" = "Nex日曆";
+"both" = "共同顯示";
+"date" = "日期";
+
+"quiz" = "測試";
+"home" = "主頁";
+"6tutorials" = "6個教程";
+"explore_nexcalendar" = "探索\nNex日曆";
+
+"change_theme" = "變更主題";
+"tropical" = "熱帶";
+"ocean" = "海洋";
+"forest" = "森林";
+"dark" = "夜間";
+
+"select_date" = "選擇日期";
+"update" = "更新";
+"tutorial_list" = "教程目錄";
+"starred_tutorials" = "星標教程";
+
+"are_you_ready" = "準備好未？";
+"quiz_cover_intro" = "你而家對Nex日曆了解有幾多？黎做幾道MCQ喇;-)";
+"swipe_to_continue" = "<<< 滑動繼續 >>>";
+"redo" = "重做";
+"check_answer" = "檢查答案";
+"test_result" = "測試結果";
+"correct" = "準確數目: ";
+"answers" = "答案";
+"close" = "關閉";
+
+"star" = "星標";
+"unstar" = "除去星標";
+
+"tutorials.json" = "tutorials-tr.json";
+"questions.json" = "questions-tr.json";

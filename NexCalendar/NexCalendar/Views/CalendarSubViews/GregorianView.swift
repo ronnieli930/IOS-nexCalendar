@@ -22,7 +22,7 @@ struct GregorianView: View {
                     .foregroundColor(Color.white)
                     .padding([.top, .leading])
                 Spacer()
-                Text("Gregorian")
+                Text(NSLocalizedString("gregorian", comment: ""))
                     .foregroundColor(Color.gray)
                     .padding([.top, .trailing])
             }

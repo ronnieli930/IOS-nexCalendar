@@ -4,7 +4,7 @@ struct CourseListNavButton: View {
     @Binding var themeColor: ThemeColor
     var body: some View {
         VStack {
-            Text("Explore \nNexCalendar")
+            Text(NSLocalizedString("explore_nexcalendar", comment: ""))
                 .font(.title)
                 .fontWeight(.semibold)
                 .foregroundColor(Color.white)

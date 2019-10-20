@@ -48,11 +48,11 @@ struct QuestionView: View {
                 AnswerView(themeColor: self.$themeColor, questions: self.questions, showAnswers: self.$showAnswers)
             })
                 .alert(isPresented: $showResult) {
-                    Alert(title: Text("Test Result:"), message: Text("correct: \(self.correctNum)"), primaryButton: .destructive(Text("Check Answer")){
+                    Alert(title: Text(NSLocalizedString("test_result", comment: "")), message: Text(NSLocalizedString("correct", comment: "") +  "\(self.correctNum)"), primaryButton: .destructive(Text(NSLocalizedString("check_answer", comment: ""))){
                         self.index = 0
                         self.correctNum = 0
                         self.showAnswers.toggle()
-                        }, secondaryButton: .cancel(Text("Redo"), action: {
+                        }, secondaryButton: .cancel(Text(NSLocalizedString("redo", comment: "")), action: {
                             self.index = 0
                             self.correctNum = 0
                         }))

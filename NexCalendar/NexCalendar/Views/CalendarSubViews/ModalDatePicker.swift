@@ -13,7 +13,7 @@ struct ModalDatePicker: View {
         ZStack {
             Color.gray.edgesIgnoringSafeArea(.all)
             VStack {
-                Text("Select Date")
+                Text(NSLocalizedString("select_date", comment: ""))
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
@@ -25,7 +25,7 @@ struct ModalDatePicker: View {
                 Button(action: {
                     self.updateCalendar()
                 }) {
-                    Text("Update")
+                    Text(NSLocalizedString("update",comment: ""))
                         .foregroundColor(Color.white)
                         .fontWeight(.bold)
                         .background(Rectangle()

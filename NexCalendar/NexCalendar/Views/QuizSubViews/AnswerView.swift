@@ -13,7 +13,7 @@ struct AnswerView: View {
                     .resizable()
                     .frame(height: 300)
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("Answers")
+                    Text("answers")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
@@ -35,7 +35,7 @@ struct AnswerView: View {
                     Button(action: {
                         self.showAnswers.toggle()
                     }) {
-                        Text("Close")
+                        Text("close")
                     }
                 }.padding()
                     .background(RoundedRectangle(cornerRadius: 14).foregroundColor(Color.black).opacity(0.1))

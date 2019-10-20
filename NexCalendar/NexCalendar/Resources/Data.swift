@@ -20,10 +20,23 @@ let nexWeekdays = [
     NSLocalizedString("sunday", comment: "")
 ]
 
-let monthArr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+let monthArr = [
+    NSLocalizedString("january", comment: ""),
+    NSLocalizedString("february", comment: ""),
+    NSLocalizedString("march", comment: ""),
+    NSLocalizedString("april", comment: ""),
+    NSLocalizedString("may", comment: ""),
+    NSLocalizedString("june", comment: ""),
+    NSLocalizedString("july", comment: ""),
+    NSLocalizedString("august", comment: ""),
+    NSLocalizedString("september", comment: ""),
+    NSLocalizedString("october", comment: ""),
+    NSLocalizedString("november", comment: ""),
+    NSLocalizedString("december", comment: "")
+]
 
-var tutorialsData: [Tutorial] = load("tutorials.json")
-let questionsData: [Question] = load("questions.json")
+var tutorialsData: [Tutorial] = load(NSLocalizedString("tutorials.json", comment: ""))
+let questionsData: [Question] = load(NSLocalizedString("questions.json", comment: ""))
 
 func load<T:Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data

@@ -17,18 +17,18 @@ struct HomeView: View {
                         Spacer()
                     }
                 }
-                .navigationBarTitle(Text("Home"))
-                .navigationBarItems(leading: Text("6 tutorials").foregroundColor(Color.gray), trailing: Button(action: {
+                .navigationBarTitle(Text(NSLocalizedString("home", comment: "")))
+                .navigationBarItems(leading: Text(NSLocalizedString("6tutorials", comment: "")).foregroundColor(Color.gray), trailing: Button(action: {
                     self.showSetting.toggle()
                 }) {
                     Image(systemName: "wrench.fill")
                 })
             }
         }.actionSheet(isPresented: self.$showSetting) {
-            ActionSheet(title: Text("Change Theme"), buttons: [.default(Text("Tropical"), action: {self.themeColor = ThemeColor.tropical}),
-                                                               .default(Text("Ocean"), action: {self.themeColor = ThemeColor.ocean}),
-                                                               .default(Text("Forest"), action: {self.themeColor = ThemeColor.forest}),
-                                                               .default(Text("Dark"), action: {self.themeColor = ThemeColor.dark}),
+            ActionSheet(title: Text(NSLocalizedString("change_theme", comment: "")), buttons: [.default(Text(NSLocalizedString("tropical", comment: "")), action: {self.themeColor = ThemeColor.tropical}),
+                                                               .default(Text(NSLocalizedString("ocean", comment: "")), action: {self.themeColor = ThemeColor.ocean}),
+                                                               .default(Text(NSLocalizedString("forest", comment: "")), action: {self.themeColor = ThemeColor.forest}),
+                                                               .default(Text(NSLocalizedString("dark", comment: "")), action: {self.themeColor = ThemeColor.dark}),
                                                                .cancel()])
         }
     }

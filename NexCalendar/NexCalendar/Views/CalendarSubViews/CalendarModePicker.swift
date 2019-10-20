@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CalendarModePicker: View {
-    var modes = ["Gregorian", "Nex", "Both"]
+    var modes = [NSLocalizedString("gregorian", comment: "" ), NSLocalizedString("nex",comment: ""), NSLocalizedString("both", comment: "")]
     @Binding var displayMode: Int
     
     var body: some View {

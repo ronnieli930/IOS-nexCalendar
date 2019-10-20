@@ -22,7 +22,7 @@ struct NexView: View {
                     .foregroundColor(Color.white)
                     .padding([.top, .leading])
                 Spacer()
-                Text("Nex")
+                Text(NSLocalizedString("nex", comment: ""))
                     .foregroundColor(Color.gray)
                     .padding([.top, .trailing])
             }

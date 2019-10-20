@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A716CCF3235A092B00B682DE /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = A716CCF2235A092B00B682DE /* courses.json */; };
 		A719C64A23562414000B114D /* ModalDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719C64923562414000B114D /* ModalDatePicker.swift */; };
 		A75B4C91234F248700D97AE7 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4C90234F248700D97AE7 /* AppView.swift */; };
 		A75B4C97234F44C900D97AE7 /* CalendarHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4C96234F44C900D97AE7 /* CalendarHeader.swift */; };
@@ -19,7 +18,7 @@
 		A75B4CC52352F78200D97AE7 /* GregorianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CC42352F78200D97AE7 /* GregorianView.swift */; };
 		A75B4CC72352F87A00D97AE7 /* NexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CC62352F87A00D97AE7 /* NexView.swift */; };
 		A75B4CC92352FBB500D97AE7 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B4CC82352FBB500D97AE7 /* Calendar.swift */; };
-		A762058E235A201A003927B5 /* tutorials.json in Resources */ = {isa = PBXBuildFile; fileRef = A762058D235A201A003927B5 /* tutorials.json */; };
+		A762058E235A201A003927B5 /* tutorials-en.json in Resources */ = {isa = PBXBuildFile; fileRef = A762058D235A201A003927B5 /* tutorials-en.json */; };
 		A7620590235A2035003927B5 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762058F235A2035003927B5 /* Tutorial.swift */; };
 		A7620592235A2053003927B5 /* TutorialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620591235A2053003927B5 /* TutorialCard.swift */; };
 		A7620594235A20CA003927B5 /* TutorialsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620593235A20C9003927B5 /* TutorialsRow.swift */; };
@@ -27,12 +26,16 @@
 		A762059A235A3762003927B5 /* TutorialList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7620599235A3762003927B5 /* TutorialList.swift */; };
 		A762059C235A3804003927B5 /* TutorialListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762059B235A3804003927B5 /* TutorialListRow.swift */; };
 		A762059E235A3856003927B5 /* TutorialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762059D235A3856003927B5 /* TutorialDetail.swift */; };
-		A76205A0235A4114003927B5 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = A762059F235A4114003927B5 /* questions.json */; };
+		A76205A0235A4114003927B5 /* questions-en.json in Resources */ = {isa = PBXBuildFile; fileRef = A762059F235A4114003927B5 /* questions-en.json */; };
 		A76205A2235A413B003927B5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205A1235A413B003927B5 /* Question.swift */; };
 		A76205A5235A5666003927B5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205A4235A5666003927B5 /* Helper.swift */; };
 		A76205A7235A5D5E003927B5 /* QuizCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205A6235A5D5E003927B5 /* QuizCover.swift */; };
 		A76205AB235A62C3003927B5 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205AA235A62C3003927B5 /* QuestionView.swift */; };
 		A76205AD235A71F3003927B5 /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76205AC235A71F3003927B5 /* AnswerView.swift */; };
+		A7CD5F2D235CB000006B5E56 /* questions-cn.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CD5F2C235CB000006B5E56 /* questions-cn.json */; };
+		A7CD5F2F235CB011006B5E56 /* tutorials-cn.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CD5F2E235CB011006B5E56 /* tutorials-cn.json */; };
+		A7CD5F33235CB5BF006B5E56 /* tutorials-tr.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CD5F32235CB5BF006B5E56 /* tutorials-tr.json */; };
+		A7CD5F35235CB5D2006B5E56 /* questions-tr.json in Resources */ = {isa = PBXBuildFile; fileRef = A7CD5F34235CB5D2006B5E56 /* questions-tr.json */; };
 		A7DB8F4223563C9700CA21AA /* CalendarModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DB8F4123563C9700CA21AA /* CalendarModePicker.swift */; };
 		A7F2583C234F1801001A4662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2583B234F1801001A4662 /* AppDelegate.swift */; };
 		A7F2583E234F1801001A4662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F2583D234F1801001A4662 /* SceneDelegate.swift */; };
@@ -45,7 +48,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A716CCF2235A092B00B682DE /* courses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
 		A719C64923562414000B114D /* ModalDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDatePicker.swift; sourceTree = "<group>"; };
 		A75B4C90234F248700D97AE7 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		A75B4C96234F44C900D97AE7 /* CalendarHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeader.swift; sourceTree = "<group>"; };
@@ -60,7 +62,7 @@
 		A75B4CC42352F78200D97AE7 /* GregorianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GregorianView.swift; sourceTree = "<group>"; };
 		A75B4CC62352F87A00D97AE7 /* NexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexView.swift; sourceTree = "<group>"; };
 		A75B4CC82352FBB500D97AE7 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
-		A762058D235A201A003927B5 /* tutorials.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tutorials.json; sourceTree = "<group>"; };
+		A762058D235A201A003927B5 /* tutorials-en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "tutorials-en.json"; sourceTree = "<group>"; };
 		A762058F235A2035003927B5 /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		A7620591235A2053003927B5 /* TutorialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCard.swift; sourceTree = "<group>"; };
 		A7620593235A20C9003927B5 /* TutorialsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsRow.swift; sourceTree = "<group>"; };
@@ -68,12 +70,18 @@
 		A7620599235A3762003927B5 /* TutorialList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialList.swift; sourceTree = "<group>"; };
 		A762059B235A3804003927B5 /* TutorialListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialListRow.swift; sourceTree = "<group>"; };
 		A762059D235A3856003927B5 /* TutorialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetail.swift; sourceTree = "<group>"; };
-		A762059F235A4114003927B5 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		A762059F235A4114003927B5 /* questions-en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "questions-en.json"; sourceTree = "<group>"; };
 		A76205A1235A413B003927B5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A76205A4235A5666003927B5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		A76205A6235A5D5E003927B5 /* QuizCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCover.swift; sourceTree = "<group>"; };
 		A76205AA235A62C3003927B5 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		A76205AC235A71F3003927B5 /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
+		A7CD5F2C235CB000006B5E56 /* questions-cn.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "questions-cn.json"; sourceTree = "<group>"; };
+		A7CD5F2E235CB011006B5E56 /* tutorials-cn.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "tutorials-cn.json"; sourceTree = "<group>"; };
+		A7CD5F30235CB380006B5E56 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A7CD5F31235CB380006B5E56 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A7CD5F32235CB5BF006B5E56 /* tutorials-tr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "tutorials-tr.json"; sourceTree = "<group>"; };
+		A7CD5F34235CB5D2006B5E56 /* questions-tr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "questions-tr.json"; sourceTree = "<group>"; };
 		A7DB8F4123563C9700CA21AA /* CalendarModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModePicker.swift; sourceTree = "<group>"; };
 		A7F25838234F1801001A4662 /* NexCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F2583B234F1801001A4662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,9 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				A75B4C9C234F645700D97AE7 /* Data.swift */,
-				A716CCF2235A092B00B682DE /* courses.json */,
-				A762058D235A201A003927B5 /* tutorials.json */,
-				A762059F235A4114003927B5 /* questions.json */,
+				A762058D235A201A003927B5 /* tutorials-en.json */,
+				A7CD5F2E235CB011006B5E56 /* tutorials-cn.json */,
+				A7CD5F32235CB5BF006B5E56 /* tutorials-tr.json */,
+				A762059F235A4114003927B5 /* questions-en.json */,
+				A7CD5F2C235CB000006B5E56 /* questions-cn.json */,
+				A7CD5F34235CB5D2006B5E56 /* questions-tr.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -255,6 +266,7 @@
 				en,
 				"zh-Hans",
 				Base,
+				"zh-HK",
 			);
 			mainGroup = A7F2582F234F1801001A4662;
 			productRefGroup = A7F25839234F1801001A4662 /* Products */;
@@ -272,12 +284,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F25848234F1802001A4662 /* LaunchScreen.storyboard in Resources */,
-				A76205A0235A4114003927B5 /* questions.json in Resources */,
+				A76205A0235A4114003927B5 /* questions-en.json in Resources */,
 				A75B4CB7234FA8A000D97AE7 /* Localizable.strings in Resources */,
 				A7F25845234F1802001A4662 /* Preview Assets.xcassets in Resources */,
 				A7F25842234F1802001A4662 /* Assets.xcassets in Resources */,
-				A716CCF3235A092B00B682DE /* courses.json in Resources */,
-				A762058E235A201A003927B5 /* tutorials.json in Resources */,
+				A7CD5F35235CB5D2006B5E56 /* questions-tr.json in Resources */,
+				A762058E235A201A003927B5 /* tutorials-en.json in Resources */,
+				A7CD5F33235CB5BF006B5E56 /* tutorials-tr.json in Resources */,
+				A7CD5F2F235CB011006B5E56 /* tutorials-cn.json in Resources */,
+				A7CD5F2D235CB000006B5E56 /* questions-cn.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +342,7 @@
 			children = (
 				A75B4CB6234FA8A000D97AE7 /* Base */,
 				A75B4CB8234FA8C400D97AE7 /* zh-Hans */,
+				A7CD5F31235CB380006B5E56 /* zh-HK */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -336,6 +352,7 @@
 			children = (
 				A75B4CB3234FA7C100D97AE7 /* zh-Hans */,
 				A75B4CB4234FA7C900D97AE7 /* Base */,
+				A7CD5F30235CB380006B5E56 /* zh-HK */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
