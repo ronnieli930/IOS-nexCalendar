@@ -37,16 +37,18 @@ struct ModalDatePicker: View {
     }
     
     func updateCalendar() {
-        let year = calendar.component(.year, from: selectedDate)
-        let month = calendar.component(.month, from: selectedDate)
-        
-        self.gregYear = year
-        self.gregMonth = month
-        
-        self.nexYear = year
-        self.nexMonth = month
-        
-        self.showModal = false
+        withAnimation(.spring()){
+            let year = calendar.component(.year, from: selectedDate)
+            let month = calendar.component(.month, from: selectedDate)
+            
+            self.gregYear = year
+            self.gregMonth = month
+            
+            self.nexYear = year
+            self.nexMonth = month
+            
+            self.showModal = false
+        }
     }
 }
 

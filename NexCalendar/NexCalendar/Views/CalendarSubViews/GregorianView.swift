@@ -73,14 +73,19 @@ struct GregorianView: View {
                 .onChanged { value in
                     self.offset = value.translation}
                 .onEnded { value in
+                    withAnimation(.spring()){
                     self.offset = CGSize.zero
                     if value.translation.width < -150 {
                         self.addMonth()
                     }else if value.translation.width > 150 {
                         self.minusMonth()
-                    }})
+                        }}})
             .gesture(TapGesture(count: 2)
-                .onEnded({self.changeToToday()}))
+                .onEnded({
+                    withAnimation(.spring()){
+                        self.changeToToday()
+                    }
+                }))
             .animation(.easeInOut)
     }
     

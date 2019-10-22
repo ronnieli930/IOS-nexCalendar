@@ -10,9 +10,10 @@ struct TutorialsRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 20) {
                     ForEach (0 ..< self.tutorials.count){ index in
-                        VStack {
+                        GeometryReader { geometry in
                             TutorialCard(theme: self.themeColor, tutorials: self.$tutorials, index: index)
-                        }
+                                .rotation3DEffect(Angle(degrees: Double(geometry.frame(in: .global).minX) / 10), axis: (x: 10, y: -10.0, z: 10))
+                        }.frame(width: 130, height: 220)
                     }
                 }
             }
